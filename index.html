@@ -34,6 +34,7 @@
   <link rel="icon" href="images/Logo.png" type="image/icon png">
 </head>
 
+
 <body>
   <!-- Top Navigation bar -->
   <nav class=" navbar navbar-expand-lg navbar-dark fixed-top font-weight-bold border-bottom" id="mainNav" 
@@ -57,22 +58,20 @@
             <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#cv" data-toggle="modal" data-target="#exampleModal">CV</a>
+            <a class="nav-link js-scroll-trigger" href="#cv" data-toggle="modal" data-target="#cvModal">CV</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  
 
   <!-- Modal for CV download -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="cvModal" tabindex="-1" role="dialog" aria-labelledby="cvModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Choose a CV to Download</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <h5 class="modal-title" id="cvModalLabel">Choose a CV to Download</h5>
       </div>
       <div class="modal-body">
         <a style="color: #292929;" href="C:\Users\Giuseppe\Desktop\Web Dev\Website\Giuseppe Silvestre Curriculum Vitae.docx" download="Resume">User Friendly</a>
@@ -81,11 +80,12 @@
         <a style="color: #292929;" href="C:\Users\Giuseppe\Desktop\Web Dev\Website\Giuseppe Silvestre CV.docx" download="Resume">ATS Friendly</a>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="color: #c2c2c2; border: none;">Close</button>
       </div>
     </div>
   </div>
 </div>
+
 
   <!-- Welcome Display -->
   <header style="background-color: #292929; color: #f5f5f5;" id="page-top">
@@ -94,10 +94,6 @@
       <h5>I'm a Computer Science graduate.</h5>
     </div>
   </header>
-
-  <br>
-  <br>
-
 
 
   <!-- Portfolio Section -->
@@ -119,6 +115,7 @@
     </div>
   </section>
 
+
   <!-- Game Section -->
   <section id="game" style="background-color: #c2c2c2;">
     <div class="container">
@@ -130,6 +127,7 @@
       </div>
     </div>
   </section>
+
 
   <!-- Blog Section -->
   <section id="blog" style="background-color: #c2c2c2;">
@@ -152,15 +150,36 @@
     </div>
   </section>
 
+
   <!-- Footer -->
-  <footer class="py-5" style="background-color: #292929; color: #f5f5f5;">
+  <footer class="py-5" style="background-color: #292929;">
     <!-- Socialmedias and Mail icons -->
     <div class="social-container">
       <div>
         <a href="https://github.com/Giuseppe995" target="_blank"><img src="images/icons8-github-48.png" alt="GitHub-Logo" height="40" class="rounded-circle"></a>
         <a href="https://www.linkedin.com/in/giuseppe-silvestre-346052173/" target="_blank"><img src="images/icons8-linkedin-48.png" alt="LinkedIn-Logo" height="43" class="rounded-circle"></a>
-        <a><img src="images/icons8-important-mail-48.png" alt="Mail-Logo" height="40" class="rounded-circle"></a>
+        <a href="#"><img src="images/icons8-important-mail-48.png" alt="Mail-Logo" height="40" class="rounded-circle" data-toggle="modal" data-target="#sendEmailModal"></a>
       </div>
+      <!-- Modal -->
+    <div class="modal fade" id="sendEmailModal" tabindex="-1" role="dialog" aria-labelledby="sendEmailModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="sendEmailModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" style="color: #c2c2c2; border: none;">Close</button>
+            <button type="button" class="btn btn-primary" style="background-color: #83f500; color:#292929; border: none">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <br>
     </div>
     <!-- Copyright -->
@@ -168,6 +187,7 @@
       <p class="m-0 text-center" style="color: #83f500;">&copy; Giuseppe Silvestre 2020</p>
     </div>
   </footer>
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
