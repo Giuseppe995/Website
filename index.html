@@ -206,27 +206,19 @@
         <a href="#bottom"><img src="images/icons8-important-mail-48.png" alt="Mail-Logo" height="40" class="rounded-circle" data-toggle="modal" data-target="#sendEmailModal"></a>
       </div>
       <!--Email Modal -->
-    <div class="modal fade" id="sendEmailModal" tabindex="-1" role="dialog" aria-labelledby="sendEmailModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title" id="sendEmailModalLabel">My Email</h4>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <p id="emailtocopy">giuseppesilvestre@outlook.it</p>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" id="copyemailbutton" class="btn btn-primary">Copy Email Address</button>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <div class="modal fade" id="sendEmailModal" tabindex="-1" role="dialog" aria-labelledby="sendEmailModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="sendEmailModalLabel">My Email</h4>
+            </div>
+            <div class="modal-body">
+              <p id="emailtocopy" value="giuseppesilvestre@outlook.it">giuseppesilvestre@outlook.it</p>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <br>
     </div>
     <!-- Copyright -->
     <div class="container">
@@ -244,9 +236,6 @@
 
   <!-- Custom JavaScript for this theme -->
   <script src="js/scrolling-nav.js"></script>
-  
-  <!-- Copy email action -->
-  <script src="js/copyemail.js"></script>
 
   <!-- Throws and error when someone tries to inspect code from browser
   <script type="text/javascript">
