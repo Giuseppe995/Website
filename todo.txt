@@ -1,5 +1,0 @@
-1. Fix modal buttons (CV and Send email)
-2. Make "send email" modal works
-3. Ass a short sentence on contact buttons, such as "Contact me:"
-4. Binary number falls in the top background
-5. Short introduction in Portfolio or Top section
